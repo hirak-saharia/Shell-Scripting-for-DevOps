@@ -7,10 +7,15 @@ Let's assume we have multiple if else condition:
       a = 100
       b = 200
       c = 300
-  So, how to find the bigger number from the above variable?
+  So, how to find the greatest number from the above variable?
   
   
-    Sol: if [[ $a -gt $b && $a -gt $c ]]
+    Sol: nano if_else.sh
+    
+         #!bin/bash
+    
+         
+         if [[ $a -gt $b && $a -gt $c ]]
     
          then
          
@@ -33,7 +38,21 @@ Let's assume we have multiple if else condition:
          chmod 777 if_elif.sh
         
          ./if_elif.sh
+         bigger
+   
+   Let's explore Loops in Shell scripting - Let's print 1 to 10 things
+   
+        nano loops.sh
+        
+        #!/bin/bash
+        
+         for ((i=0; i<10; i++))
          
+         do
+         
+         echo "$i"
+         
+         done
   
   
   
