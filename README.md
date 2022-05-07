@@ -40,7 +40,7 @@ Let's assume we have multiple if else condition:
          ./if_elif.sh
          bigger
    
-   Let's explore Loops in Shell scripting - Let's print 1 to 10 things
+   Let's explore Loops in Shell scripting - Let's print 1 to 10 numbers
    
         nano loops.sh
         
@@ -54,6 +54,33 @@ Let's assume we have multiple if else condition:
          
          done
   
+  Let's explore some advance workflow .....
   
-  
-  
+  Let's iterate files using loops
+         
+         Let's create a file 
+         
+         touch file_1.text
+         
+         touch file_2{2..10}.txt     #it means in short till 10 files will be created from second file
+         
+   Now let's Iterate 10 files using for loop function
+   
+         #!/bin/bash
+         
+         for ((i=0; i<10; i++))
+         
+         do
+         
+         echo "$i"
+         
+         done
+         
+         for FILE in *.txt
+         
+         do
+         
+         echo $FILE
+         
+         done
+         
